@@ -1,6 +1,7 @@
 package dataDrivenPackage;
 
 import java.io.FileNotFoundException;
+
 import java.io.IOException;
 import java.time.Duration;
 
@@ -24,11 +25,11 @@ public class ValidLoginTestCase extends Flib
 				 
 				//to read the data frome external files create the obj of flip
 				Flib flib = new Flib();
-	            driver.findElement(By.name("pwd")).sendKeys(flib.readExcelData(" ./ data/ActitimeTestData.xlsx","validcreads",1,1));
+	            driver.findElement(By.name("username")).sendKeys(flib.readExcelData("./data/ActitimeTestData.xlsx","validcreads",1,0));
                 Thread.sleep(2000);
 
 		        
-	            driver.findElement(By.name("pwd")).sendKeys(flib.readExcelData(" ./ data/ActitimeTestData.xlsx","validcreads",1,1));
+	            driver.findElement(By.name("pwd")).sendKeys(flib.readExcelData("./data/ActitimeTestData.xlsx","validcreads",1,1));
                 Thread.sleep(2000);
 
 	            

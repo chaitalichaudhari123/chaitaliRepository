@@ -11,6 +11,7 @@ public class ValidLoginTestCase extends BaseTest
 		bt.setUp();
 		
 		LoginPage lp = new LoginPage(driver);
+       // HomePage hp = new HomePage(driver);
         HomePage hp = new HomePage(driver);
 		Flib flib = new Flib();
 		

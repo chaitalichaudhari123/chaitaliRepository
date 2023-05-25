@@ -14,8 +14,7 @@ public class CreateUserTestData extends BaseTest
 		lp.validLogin(flib.readPropertyData(PROP_PATH, "username"),flib.readPropertyData(PROP_PATH, "password"));
 		Thread.sleep(2000);
 		
-		HomePage hp = new HomePage(driver);
-		
+       HomePage hp = new HomePage(driver);		
 		
 	}
 

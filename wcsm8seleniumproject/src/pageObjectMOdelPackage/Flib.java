@@ -52,8 +52,8 @@ public class Flib
     Cell cell = row.createCell(cellCount);
     cell.setCellValue(data);
     
-   FileOutputStream fos = new FileOutputStream(excelPath);
-   wb.write(fos);
+    FileOutputStream fos = new FileOutputStream(excelPath);
+    wb.write(fos);
    
 	}
 	//read property data
@@ -70,15 +70,16 @@ public class Flib
 	
 	//generalize cell count
 	
-	public short cellCount() 
+	public short cellCount(String excelPath,String sheetName,int rowCount) throws EncryptedDocumentException, IOException 
 	{
 		FileInputStream fis = new FileInputStream(excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
 	    Sheet sheet = wb.getSheet(sheetName);
-	    Object row = sheet.getRow(rowCount);
-         Object cc = row.getLastCellNum();
-	     return cc;
+	    Row row = sheet.getRow(rowCount);
+        short cc = row.getLastCellNum();
+	    return cc;
 	}
+	
 	
 }
 	
