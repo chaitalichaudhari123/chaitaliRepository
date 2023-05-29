@@ -36,28 +36,30 @@ public class HandleFlipcartWindow
 		 if (!parentHandle.equals(wh))
 		 {
 			 driver.switchTo().window(wh);
-		 }
+		 } 
+		 
 			
 		 else 
 		 {
-		   
-		 }
-	   }			
-		
-			 String actualTitle = driver.getTitle();
-			   if(actualTitle.equals("samsung S23 Ultra-Buy product Online at Best Price in India-All Catogories | Flipkart.com"));
-			   {
-				   System.out.println("its child window");		 }
-	            }
-	 else 
 
+		} 
+		 
+	   }
+
+	   String actualTitle = driver.getTitle();
+	   if(actualTitle.equals("samsung S23 Ultra-Buy product Online at Best Price in India-All Catogories | Flipkart.com"));
+		{
+	       System.out.println("its child window");		 
+	     }
+	else
+		
         	{
 	        	System.out.println("window is not handle");
 			}
-	      
+	      // =driver.findElement(By.xpath("//span[text"))
 	   }
 	   
 	   
 		   
-	
+}
 	

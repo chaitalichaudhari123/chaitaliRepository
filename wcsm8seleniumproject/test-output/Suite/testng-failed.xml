@@ -14,17 +14,4 @@
       </class> <!-- testNGExecution.SelectBrowser -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-  <test thread-count="5" name="FirefoxTest(failed)">
-    <parameter name="Vpassword" value="manager"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="Vusername" value="admin"/>
-    <parameter name="url" value="http://laptop-eeksod7b/login.do"/>
-    <classes>
-      <class name="testNGExecution.SelectBrowser">
-        <methods>
-          <include name="method1"/>
-        </methods>
-      </class> <!-- testNGExecution.SelectBrowser -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
